@@ -888,5 +888,12 @@
         "auth": "With Auth",
         "outdated": "Outdated",
         "banned": "Banned"
+    },
+    "plausible": {
+        "realtimeVisitors": "Realtime Visitors",
+        "aggregateVisitors": "Visitors",
+        "aggregatePageviews": "Pageviews",
+        "aggregateBounceRate": "Bounce Rate",
+        "aggregateVisitDuration": "Visit Duration"
     }
 }

@@ -19,10 +19,22 @@ export default function Component({ service }) {
   return (
     <Container service={service}>
       <Block label="plausible.realtimeVisitors" value={t("common.number", { value: realtimeVisitors })}/>
-      <Block label="plausible.aggregate.bouncerate" value={t("common.number", { value: aggregate['results']['bounce_rate']['value'] })}/>
-      <Block label="plausible.aggregate.pageviews" value={t("common.number", { value: aggregate['results']['pageviews']['value'] })}/>
-      <Block label="plausible.aggregate.visit_duration" value={t("common.number", { value: aggregate['results']['visit_duration']['value'] })}/>
-      <Block label="plausible.aggregate.visitors" value={t("common.number", { value: aggregate['results']['visitors']['value'] })}/>
+
+      {aggregate?.['results']?.['bounce_rate'] ? (
+        <Block label="plausible.aggregateBouncerate" value={t("common.number", { value: aggregate['results']['bounce_rate']['value'] })}/>
+      ) : null}
+
+      {aggregate?.['results']?.['pageviews'] ? (
+        <Block label="plausible.aggregatePageviews" value={t("common.number", { value: aggregate['results']['pageviews']['value'] })}/>
+      ) : null}
+
+      {aggregate?.['results']?.['visit_duration'] ? (
+        <Block label="plausible.aggregateVisitDuration" value={t("common.number", { value: aggregate['results']['visit_duration']['value'] })}/>
+      ) : null}
+
+      {aggregate?.['results']?.['visitors'] ? (
+        <Block label="plausible.aggregateVisitors" value={t("common.number", { value: aggregate['results']['visitors']['value'] })}/>
+      ) : null}
     </Container>
   );
 }
