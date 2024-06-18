@@ -84,6 +84,7 @@ const components = {
   pialert: dynamic(() => import("./netalertx/component")),
   pihole: dynamic(() => import("./pihole/component")),
   plantit: dynamic(() => import("./plantit/component")),
+  plausible: dynamic(() => import("./plausible/component")),
   plex: dynamic(() => import("./plex/component")),
   portainer: dynamic(() => import("./portainer/component")),
   prometheus: dynamic(() => import("./prometheus/component")),

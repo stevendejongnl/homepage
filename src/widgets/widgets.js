@@ -76,6 +76,7 @@ import photoprism from "./photoprism/widget";
 import proxmoxbackupserver from "./proxmoxbackupserver/widget";
 import pihole from "./pihole/widget";
 import plantit from "./plantit/widget";
+import plausible from "./plausible/widget";
 import plex from "./plex/widget";
 import portainer from "./portainer/widget";
 import prometheus from "./prometheus/widget";
@@ -195,6 +196,7 @@ const widgets = {
   pialert: netalertx,
   pihole,
   plantit,
+  plausible,
   plex,
   portainer,
   prometheus,
